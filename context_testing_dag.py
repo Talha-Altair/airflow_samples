@@ -27,7 +27,7 @@ def chumma_sample2(**context):
 
 with DAG(
         dag_id="context_testing_dag",
-        schedule_interval="* * * * *",
+        schedule_interval="0 0/1 * 1/1 * ? *",
         default_args={
             "owner": "airflow",
             "retries": 1,
